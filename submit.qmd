@@ -1,5 +1,5 @@
 ---
-title: "Lab 4_v2"
+title: "Lab 4"
 author: "Karisa Ke"
 format: html
 editor: visual
