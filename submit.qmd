@@ -46,6 +46,7 @@ met$date <- as.Date(paste(met$year, met$month, met$day, sep = "-"))
 ```
 
 ```{r}
+library(data.table)
 met$week = week(met$date)
 ```
 
