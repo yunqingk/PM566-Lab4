@@ -11,6 +11,7 @@ embed-resources: true
 ```{r}
 library(tidyverse)
 library(data.table)
+library(ggplot2)
 ```
 
 ```{r}
