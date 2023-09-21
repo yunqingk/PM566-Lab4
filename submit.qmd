@@ -9,8 +9,11 @@ embed-resources: true
 ## 1. Read in the data
 
 ```{r}
+library(tidyverse)
+library(data.table)
+```
 
-
+```{r}
 if (!file.exists("met_all.gz"))
   download.file(
     url = "https://raw.githubusercontent.com/USCbiostats/data-science-data/master/02_met/met_all.gz",
@@ -46,7 +49,6 @@ met$date <- as.Date(paste(met$year, met$month, met$day, sep = "-"))
 ```
 
 ```{r}
-library(data.table)
 met$week = week(met$date)
 ```
 
