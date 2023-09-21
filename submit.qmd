@@ -9,9 +9,11 @@ embed-resources: true
 ## 1. Read in the data
 
 ```{r}
+install.packages('R.utils')
 library(tidyverse)
 library(data.table)
 library(ggplot2)
+library(R.utils)
 ```
 
 ```{r}
