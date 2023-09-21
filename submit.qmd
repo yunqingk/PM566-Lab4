@@ -124,7 +124,7 @@ met_avg %>%
 filter(!(region %in% NA)) %>%
   ggplot(mapping=aes(x=region, y=dew.point)) +
   stat_summary(fun.data="mean_sdl", geom="errorbar") +
-  stat_summary(fun.data="mean_sdl")Ye1
+  stat_summary(fun.data="mean_sdl")
 ```
 
 ```{r}
