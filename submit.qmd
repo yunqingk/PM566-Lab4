@@ -122,6 +122,11 @@ filter(!(region %in% NA)) %>%
 ## 6. **Use `stat_summary` to examine mean dew point and wind speed by region with standard deviation error bars**
 
 ```{r}
+install.packages('Hmisc')
+library(Hmisc)
+```
+
+```{r}
 met_avg %>%
 filter(!(region %in% NA)) %>%
   ggplot(mapping=aes(x=region, y=dew.point)) +
